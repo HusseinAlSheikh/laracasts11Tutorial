@@ -16,13 +16,13 @@ Route::get('/contact', function () {
 
 Route::get('/jobs', function () {
     return view('jobs',[
-        'jobs' => Job::allJob()
+        'jobs' => Job::all()
     ]);
 });
 
 
 
 Route::get('/jobs/{id}', function ($id) {
-    $job = Job::findJob($id);
+    $job = Job::find($id);
     return view('job',compact('job'));
 });

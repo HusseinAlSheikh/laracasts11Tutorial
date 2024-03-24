@@ -8,6 +8,7 @@
     Hello World from Job Page
 
     <h2>     {{ $job['title']}}  </h2>
+    <h3>     {{ $job['salary']}}  </h3>
 
 
 </x-layout>
