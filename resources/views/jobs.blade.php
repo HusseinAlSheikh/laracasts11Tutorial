@@ -7,10 +7,15 @@
     </x-slot:heading>
     Hello World from Jobs Page
 
-    <ul>    
+    <div class="space-y-4">    
         @foreach ($jobs as $job )
-            <a href="/jobs/{{ $job['id'] }}">
-                <li > {{ $job['title']}} -- {{ $job->salary}}  </li>
+            <a href="/jobs/{{ $job['id'] }}" class="block border border-red-200 px-4 py-2 rounded-lg">
+                <div class="font-bold text-blue-500 text=sm">
+                    {{ $job->employeer->name }}
+                </div>
+                <div>
+                    <strong > {{ $job['title']}} -- {{ $job->salary}}  </strong>
+                </div>
             </a>
         @endforeach
     </ul>
