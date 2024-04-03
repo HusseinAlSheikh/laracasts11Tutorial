@@ -26,9 +26,9 @@ class DatabaseSeeder extends Seeder
 
 
        
-        Tag::factory(10)->create();
-        Job::factory(10)->create();
-        Employeer::factory(10)->create();
+        Tag::factory(100)->create();
+        Job::factory(100)->create();
+        Employeer::factory(100)->create();
 
 
     }
