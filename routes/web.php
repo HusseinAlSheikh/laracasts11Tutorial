@@ -41,3 +41,5 @@ Route::post('/register',[AuthController::class , 'store']);
 
 Route::get('/login',[AuthController::class , 'login']);
 Route::post('/login',[AuthController::class , 'postLogin']);
+
+Route::post('/logout',[AuthController::class , 'logout']);
