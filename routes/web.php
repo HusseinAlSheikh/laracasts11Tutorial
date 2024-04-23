@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\JobController;
+use App\Mail\JobPosted;
 use App\Models\Job;
 use Illuminate\Support\Facades\Route;
+
 
 // Route::get('/', function () {
 //     return view('home');
