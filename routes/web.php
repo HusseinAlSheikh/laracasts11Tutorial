@@ -2,14 +2,20 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\JobController;
+use App\Jobs\TranslateJob;
 use App\Mail\JobPosted;
 use App\Models\Job;
 use Illuminate\Support\Facades\Route;
 
 
-// Route::get('/', function () {
-//     return view('home');
-// });
+Route::get('/test', function () {
+    $job = Job::first();
+
+    TranslateJob::dispatch($job);
+    return 'Done';
+});
+
+
 Route::view('/','home');
 
 // Route::get('/about', function () {
