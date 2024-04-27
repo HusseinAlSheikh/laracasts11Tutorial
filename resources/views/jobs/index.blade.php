@@ -14,7 +14,7 @@
                     {{ $job->employeer->name }}
                 </div>
                 <div>
-                    <strong > {{ $job['title']}} -- {{ $job->salary}}  </strong>
+                    <strong class="text-laravel-11"> {{ $job['title']}} -- {{ $job->salary}}  </strong>
                 </div>
             </a>
         @endforeach
